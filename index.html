@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+            <div class="logo"> Gustavo NM</div>
+            <div>
+               <ul class="nav-links">
+                 <li><a href="#about">About</a></li>
+                 <li><a href="#experience">Experience</a></li>
+                 <li><a href="#projects">Projects</a></li>
+                 <li><a href="#contact">Contact</a></li>
+               </ul> 
+            </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> Gustavo NM</div>
+        <div class="hamburger-menu"> 
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about"onclick="toggleMenu()">About</a></li>
+                 <li><a href="#experience"onclick="toggleMenu()">Experience</a></li>
+                 <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
+                 <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile_circular.png" alt="Gustavo Profile">
+        </div>
+
+        <div class="section__text">
+            <p class="section__text__p1"> Hello, i'm</p>
+            <h1 class="title"> Gustavo Martins</h1>
+            <p class="section__text__p2"> Back End Developer</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Contact
+                </button>
+            </div>
+            
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="my-linkedin-profile"
+                class=icon 
+                onclick="location.href='https://www.linkedin.com/in/gustavo-martins-543b34354/'">
+
+                <img src="./assets/github.png" alt="my-git-hub-profile" 
+                class=icon 
+                onclick="location.href='https://github.com/gugucazhiz'">
+
+            </div>
+        </div>
+    </section>
+    <section id ="about">
+        <p class = "section__text__p1"> Get To Know More</p>
+        <p class = "title"> About Me</p>
+        <div class = "section-container">
+            <div class ="section__pic-container">
+                <img src="./assets/profile3.jpg" alt="profile-about"
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon"
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>Any at the momment</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>Pursuing a degree in Systems Analysis and Development at UFRN (Brazil)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hi,i'm Gustavo Martins, 22 years old,a former butcher who's moving into technology with everything! right now, <br>
+                        i'm focusing on Back-End(java/python/c++) and databases,<br>
+                        but i'm also experimenting with front-end to showcase my projects.
+                        i have soft skills from other jobs<br>
+                        in my backpack that makes a difference when it comes to coding<br>
+                        While my passion lies in data logic and back-end systems, I’m building front-end skils to:<br>
+                        Create interactive portfolios for my data/back-end projects.<br>
+                        Collaborate more efficiently with full-stack teams.<br>
+                        Understand end-to-end development workflows.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon"
+        class="icon arrow" onclick="location.href='#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title2">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title"> Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title"> Back-End Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h3>C++</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Github</h3>
+                                <p></p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Data Cleaning</h3>
+                                <p></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon"
+        class="icon arrow" onclick="location.href='#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1"> Browser My Recent</p>
+        <h1 class="title"> Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/projeto1.jpeg" 
+                    alt="projeto1" class="project-img">
+                </div> 
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/gugucazhiz/AnalysisEnemDataBase'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://gugucazhiz.github.io/SiteEnemPorto/'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/projeto2.jpeg" 
+                    alt="projeto1" class="project-img">
+                </div> 
+                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/gugucazhiz/java-tic-tac-toe'">
+                        Github
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon"
+        class="icon arrow" onclick="location.href='#projects'">
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
