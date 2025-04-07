@@ -293,6 +293,9 @@ section{
   font-size: 1.3rem;
   margin-bottom: 2rem;
 }
+.section__text__p3{
+  text-align: center;
+}
 .title{
   font-size: 3rem;
   text-align: center;
@@ -386,6 +389,15 @@ section{
   border-color: rgb(163,163,163);
   text-align: center;
 }
+.details-container2{
+  padding: 0.2rem;
+  flex: 1;
+  background: white;
+  border-radius: 1rem;
+  border: rgb(55, 55, 55)0.1rem solid;
+  border-color: rgb(163,163,163);
+  text-align: left;
+}
 
 .section-container{
   gap:4rem;
@@ -460,4 +472,50 @@ article .icon{
 .project-btn{
   color: black;
   border-color: rgb(163,163,163);
+}
+
+/*Contact */
+
+#contact{
+  position:relative;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.contact-info-upper-container{
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53)0.1rem solid;
+  border-color: rgb(163,163,163);
+  background: white;
+  margin: 0 auto;
+  padding: 0.6rem;
+  width: 50%;
+}
+
+.contact-info-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p{
+  font-size: large;
+}
+.contact-icon{
+  cursor: default;
+  height: 2rem;
+}
+.contact-icon-link{
+  cursor: default;
+  height: 1.7rem;
+}
+
+#footer{
+  position:relative;
+  margin-top: -8rem;
 }
